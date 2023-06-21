@@ -14,9 +14,9 @@
     }
   },
   "user_attributes": {
-    "bigquery_connection_name": {
+    "marketplace_bqml_ext_ml_accelerator_bigquery_connection_name": {
       "label": "Machine Learning Accelerator Setting: BigQuery Connection Name",
-      "description": "The BigQuery connection the application will be allowed to use. Must be the same connection as chosen above.",
+      "description": "The BigQuery connection the application will be allowed to use.",
       "type": "string",
       "required": true,
       "value_is_hidden": false,
@@ -25,7 +25,7 @@
       "default_value": "",
       "value_constraint": "connection"
     },
-    "gcp_project": {
+    "marketplace_bqml_ext_ml_accelerator_gcp_project": {
       "label": "Machine Learning Accelerator Setting: GCP Project ID",
       "description": "The GCP project ID for the BigQuery dataset where ML models will be saved.",
       "type": "string",
@@ -35,7 +35,7 @@
       "user_can_edit": false,
       "default_value": ""
     },
-    "bqml_model_dataset_name": {
+    "marketplace_bqml_ext_ml_accelerator_bqml_model_dataset_name": {
       "label": "Machine Learning Accelerator Setting: BQML Model Dataset Name",
       "description": "The dataset where ML models will be saved. Create a new dataset for BQML models (recommended) or choose the same dataset used for Looker PDTs.",
       "type": "string",
@@ -48,7 +48,7 @@
   },
   "models": [
     {
-      "name": "ml_accelerator",
+      "name": "ml_accelerator_jrs",
       "connection_constant": "CONNECTION_NAME"
     }
   ]
