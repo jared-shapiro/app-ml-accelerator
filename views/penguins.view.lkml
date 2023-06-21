@@ -47,6 +47,15 @@ view: penguins {
       sql: ${TABLE}.sex ;;
     }
 
+  dimension: dataframe {
+    type: string
+    sql:  CASE
+            WHEN FARM_FINGERPRINT(${unique_id}) < 4602018618904989184 THEN 'train'
+            ELSE 'predict'
+          END
+    ;;
+  }
+
     measure: count {
       type: count
       drill_fields: [detail*]
