@@ -1,7 +1,7 @@
 project_name: "marketplace_bqml_ext"
 
 application: ml-accelerator {
-  label: "Machine Learning Accelerator"
+  label: "ML Accelerator Sales Demo"
   file: "bundle.js"
   sri_hash: "Bf330NOp0B0RK3lAsFPd0mY2/wLNeuhSEnqz/e/vtX97ZDZX2P7HQSHOBMvQQn1V"
   entitlements: {
