@@ -1,3 +1,3 @@
-include: "/views/penguins.view.lkml"
+include: "/views/penguins/penguins.view.lkml"
 
 explore: penguins {}
